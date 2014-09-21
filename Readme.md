@@ -1,6 +1,6 @@
-# Compile Jade templates to React.DOM
+# Compile Jade templates to Mithril.DOM
 
-Uses [jade-react](https://github.com/duncanbeevers/jade-react) to compile templates to `React.DOM` directives as part of your [Gulp](https://github.com/gulpjs/gulp) build process.
+Uses [jade-mithril](https://github.com/ysimonson/jade-mithril) to compile templates to `Mithril.DOM` directives as part of your [Gulp](https://github.com/gulpjs/gulp) build process.
 
 The files are kind of useless on their own, so you'll want to prefix+suffix them to handle exporting the generated expressions.
 
@@ -8,12 +8,12 @@ The files are kind of useless on their own, so you'll want to prefix+suffix them
 
 ````javascript
 var gulp = require('gulp');
-var jadeReact = require('gulp-jade-react');
+var jadeMithril = require('gulp-jade-mithril');
 
 // Build React templates
 gulp.task('templates', function () {
   gulp.src(['templates/*.jade'])
-    .pipe(jadeReact())
+    .pipe(jadeMithril())
     .pipe(gulp.dest('build'))
 });
 ````
