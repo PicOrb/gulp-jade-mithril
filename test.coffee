@@ -3,7 +3,7 @@ gutil  = require('gulp-util')
 chai   = require('chai')
 expect = chai.expect
 
-describe 'gulp-jade-react', ->
+describe 'gulp-jade-mithril', ->
   it 'should render files', (cb) ->
     stream = plugin()
     buffer = []
@@ -13,7 +13,7 @@ describe 'gulp-jade-react', ->
 
     stream.on 'end', ->
       output = buffer[0]
-      expect(String(output.contents)).to.equal('function(){return React.DOM.p(null,"Moar");}')
+      expect(String(output.contents)).to.equal('function(){return m(null,"Moar");}')
       cb()
 
     stream.write new gutil.File
