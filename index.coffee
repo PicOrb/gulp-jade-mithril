@@ -1,4 +1,4 @@
-render     = require 'jade-react'
+render     = require 'jade-mithril'
 through    = require 'through2'
 replaceExt = require 'replace-ext'
 
