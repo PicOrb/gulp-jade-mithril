@@ -1,7 +1,7 @@
 {
-  "name": "gulp-jade-react",
+  "name": "gulp-jade-mithril",
   "version": "0.2.0",
-  "description": "Compile Jade templates to React components",
+  "description": "Compile Jade templates to Mithril components",
   "main": "./main.js",
   "scripts": {
     "test": "gulp test --require coffee-script/register"
@@ -9,7 +9,7 @@
   "keywords": [
     "gulpplugin"
   ],
-  "author": "Duncan Beevers",
+  "author": "Ericson Cepeda (PicOrb)",
   "license": "WTFPL",
   "devDependencies": {
     "chai": "~1.8.1",
@@ -22,15 +22,15 @@
   },
   "dependencies": {
     "coffee-script": "~1.7.1",
-    "jade-react": "~0.2.0",
+    "jade-mithril": "~0.2.0",
     "through2": "~0.4.1",
     "replace-ext": "0.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/duncanbeevers/gulp-jade-react.git"
+    "url": "https://github.com/PicOrb/gulp-jade-mithril.git"
   },
   "bugs": {
-    "url": "https://github.com/duncanbeevers/gulp-jade-react/issues"
+    "url": "https://github.com/PicOrb/gulp-jade-mithril/issues"
   }
 }
